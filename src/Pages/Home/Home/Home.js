@@ -2,7 +2,7 @@ import React from 'react';
 
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
-import HomeBikes from '../HomeBikes/HomeBikes';
+import HomeBikes from '../HomeProducts/HomeProducts';
 import Reviews from '../Reviews/Reviews';
 
 

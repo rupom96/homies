@@ -16,7 +16,7 @@ import MyOrders from './Pages/MyOrders/MyOrders';
 
 import AddProduct from './Pages/AddProduct/AddProduct';
 import Registration from './Login/Registration/Registration';
-// import MoreBikes from './Pages/moreProperties/moreProperties';
+
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
 import AddReview from './Pages/AddReview/AddReview';
 import Pay from './Pages/Pay/Pay';
@@ -24,7 +24,7 @@ import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
 import AdminRoute from './Login/AdminRoute/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
-import MoreBikes from './Pages/MoreBikes/MoreBikes';
+import MoreBikes from './Pages/MoreProducts/MoreProducts';
 import BarChart from './Pages/Charts/LnChart';
 import Charts from './Pages/Charts/Charts';
 import SalesChart from './Pages/SalesCharts/SalesChart';

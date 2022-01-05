@@ -1,24 +1,26 @@
 import React from 'react';
-import useData from '../../hooks/useData';
-import MoreBike from './MoreBike';
+// import { Button, Card } from 'react-bootstrap';
+import useData from '../../../hooks/useData';
+import HomeBike from '../HomeProduct/HomeProduct';
 
-const MoreBikes = () => {
+const HomeBikes = () => {
     const [data] = useData();
+    data.splice(6);
 
     const handleClickService = () => {
 
     }
 
     return (
-        <div className="mt-5 pt-5">
-            <h1 id="allbikesid">All of Our Properties:</h1>
+        <div className="mt-5">
+            <h1 id="productsid">Featured Properties:</h1>
             <div className="card-container px-5 mt-5">
 
                 {data.length === 0 &&
 
-                    <div class="d-flex justify-content-center mt-5 mb-5">
-                        <div class="spinner-border text-danger" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                    <div className="d-flex justify-content-center mt-5 mb-5">
+                        <div className="spinner-border text-danger" role="status">
+                            <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>
                 }
@@ -27,11 +29,11 @@ const MoreBikes = () => {
                     {/* per card will be set here */}
                     {
                         data.map(data =>
-                            <MoreBike
+                            <HomeBike
                                 key={data._id}
-                                product={data}
+                                service={data}
                                 handleClickService={handleClickService}
-                            ></MoreBike>)
+                            ></HomeBike>)
                     }
 
 
@@ -43,5 +45,4 @@ const MoreBikes = () => {
     );
 };
 
-
-export default MoreBikes;
+export default HomeBikes;
